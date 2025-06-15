@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>Document</title>
+    <form action="">
+        <label for="">Full name</label>
+        <input type="Full name">
+        <label for="">Email</label>
+        <input type="email">
+        <ul>
+            Gender
+            <li>Male <input type="radio"/></li>
+            <li>Female <input type="radio"/></li>
+        </ul>
+        Interest
+        <li>Basketball <input type="checkbox"/></li>
+        <li>Football <input type="checkbox"/></li>
+    </form>
+</head>
+<body>
+    
+</body>
+</html>
