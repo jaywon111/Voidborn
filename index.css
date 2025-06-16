@@ -1,111 +1,120 @@
-body {
-    font-family: 'Poppins', sans-serif;
+/* Basic Reset & Box-sizing */
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    color: #333;
-    line-height: 1.6;
 }
-.cont {
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+}
+
+.container {
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 20px;
 }
-h1, h5 {
-font-weight: 800;
-line-height: 1.2;
-margin-bottom: 0.5em;
-}
-p {
-    margin-bottom: 1em;
-}
-a {
-    text-decoration: none;
-    color: inherit;
-}
 
-/* Buttons */
-* .login {
-    display: inline-block;
-    padding: 10px 20px;
-    border: 1px solid gray;
-    color: #007bff;
-    border-radius: 4px;
-    background-color: none;
-}
-.login: :hover {
-    background-color: #007bff;
-    color: white;
-}
-.signup {
-    display: inline-block;
-    padding: 10px 20px;
-    background-color: rgb(120, 120, 247);
-    color: white;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-}
-.signup:hover {
-    background: white;
-    color: blue;
-    font-weight: bold;
-    border-radius: 8px;
-    border: 2px solid blue;
-}
-.nav {
-    background-color: white;
+/* Navbar Styling */
+.navbar {
+    background-color: #fff;
     padding: 15px 0;
-    box-shadow: 0 2px 4px rgba(red, green, blue, alpha);
-    position: sticky;
-    top: 0;
-    z-index: 1000;
-}
-.na v .cont {
-display: flex;
-justify-content: space-between;
-align-items: center;
-}
-.nav .logo img {
-    height: 110px;
-}
-.nav ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
+    border-bottom: 1px solid #eee;
     display: flex;
-}
-.nav ul li {
-    margin-left: 30px;
-}
-.nav ul li a {
-    color: #555;
-    font-weight: 600;
-    transition: color 0.3s ease;
-}
-.nav ul li a: :hover {
-color: #007bff;
-}
-.nav .buttons a {
-    margin-left: 15px;
+    justify-content: space-between;
+    align-items: center;
 }
 
-Hero sect
- .hero-section {
-     background-color: white;
-     padding: 80px 0;
-     text-align: center;
-}
-.hero-section .cont {
+.navbar .container {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
-    gap: 40px;
-    flex-wrap: wrap;
 }
-.hero-content {
-    flex: 1;
-    min-width: 300px;
-    text-align: left;
+
+.logo img {
+    height: 30px; /* Adjust as needed */
+}
+
+.nav-links ul {
+    list-style: none;
+    display: flex;
+}
+
+.nav-links ul li {
+    margin-left: 25px;
+}
+
+.nav-links ul li a {
+    text-decoration: none;
+    color: #555;
+    font-weight: 500;
+}
+
+.auth-buttons .login-btn,
+.auth-buttons .signup-btn {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.auth-buttons .login-btn {
+    background-color: transparent;
+    color: #007bff; /* Example blue */
+    border: 1px solid #007bff;
+    margin-right: 10px;
+}
+
+.auth-buttons .signup-btn {
+    background-color: #007bff; /* Example blue */
+    color: #fff;
+}
+
+/* Hero Section Styling */
+.hero-section {
+    text-align: center;
+    padding: 100px 0;
+    background-color: #f9f9f9;
+}
+
+.hero-section .tagline {
+    color: #007bff; /* Example blue */
+    font-size: 1.1em;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.hero-section h1 {
+    font-size: 3.5em;
+    margin-bottom: 20px;
+    color: #222;
+}
+
+.hero-section .description {
+    font-size: 1.3em;
+    color: #666;
+    max-width: 800px;
+    margin: 0 auto 30px;
+}
+
+.hero-section .trial-btn {
+    background-color: #fca311; /* Example orange/yellow */
+    color: #fff;
+    padding: 15px 30px;
+    font-size: 1.2em;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-block;
+    margin-bottom: 15px;
+}
+
+.hero-section .small-text {
+    font-size: 0.9em;
+    color: #888;
 }
