@@ -3,8 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>GetResponse Clone (Basic Layout)</title>
+    <title>GetResponse</title>
     <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap">
 </head>
 <body>
     <header class="navbar">
@@ -14,15 +15,23 @@
             </div>
             <nav class="nav-links">
                 <ul>
-                    <li><a href="#">Product</a></li>
-                    <li><a href="#">Pricing</a></li>
-                    <li><a href="#">Resources</a></li>
-                    <li><a href="#">Book a demo</a></li>
+                    <div class="drop-down">
+                        <li class="Product">Product</li>
+                        <div class="drop-down-content">
+                            <a href=""><li>Lorem, ipsum dolor.</li></a>
+                            <a href=""><li>Lorem, ipsum dolor.</li></a>
+                            <a href=""><li>Lorem, ipsum dolor.</li></a>
+                            <a href=""><li>Lorem, ipsum dolor.</li></a>
+                        </div>
+  </div>
+  <li>Pricing</li>
+  <li>Resources</li>
+  <li>Book a demo</li>
                 </ul>
             </nav>
             <div class="auth-buttons">
-                <button class="login-btn">Log in</button>
-                <button class="signup-btn">Sign up free</button>
+                <a href="" class="login-btn">Log in</a>
+                <a href="" class="signup-btn">Sign up free</a>
             </div>
         </div>
     </header>
@@ -31,7 +40,7 @@
         <div class="container">
             <p class="tagline">EMAIL MARKETING & AUTOMATION PLATFORM</p>
             <h1>Email marketing that grows with you</h1>
-            <p class="description">Get the email tools you need today, with automation and AI that scale with you – all in one affordable subscription</p>
+            <p class="description">Get the email tools you need today, with automation and <br> AI that scale with you – all in one affordable subscription</p>
             <button class="trial-btn">Start 30-day FREE trial &rarr;</button>
             <p class="small-text">Try us free | No credit card required | Cancel anytime</p>
         </div>
